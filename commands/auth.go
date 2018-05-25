@@ -9,15 +9,14 @@ import (
 )
 
 type authURL struct {
-	create   string
-	validate string
-	session  string
+	create, validate, session string
 }
 
 type createResponse struct {
 	sessionKey string
 }
 
+// CreateResponse for capturing createResponse type
 type CreateResponse struct {
 	createResponse
 }
